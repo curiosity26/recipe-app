@@ -1,0 +1,85 @@
+.title {
+    font-family: mrs-eaves, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+    padding: 3rem 0 0.5rem 0;
+}
+
+.subtitle {
+    font-family: mrs-eaves, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.75rem;
+    padding: 2.25rem 0 1rem 0;
+}
+
+.category {
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+
+.description {
+    font-family: mrs-eaves, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    padding: 0.5rem 0 2rem;
+}
+
+.details {
+    font-family: mrs-eaves-roman-all-small-ca, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 1.15rem;
+    padding-bottom: 1.15rem;
+    margin-bottom: 1.5rem;
+    border-top: 4px double currentColor;
+    border-bottom: 4px double currentColor;
+}
+
+.detail {
+    font-family: mrs-eaves-roman-lining, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.ingredients {
+    padding: 1rem 0;
+}
+
+.ingredients > div {
+    border-bottom: 1px dotted lightgrey;
+}
+
+.ingredient_measurement {
+    font-family: mrs-eaves-roman-lining, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: right;
+    padding: 0.5rem 0rem 0.5rem 1.5rem;
+}
+
+.ingredient_unit {
+    padding: 0.5rem;
+    font-family: mrs-eaves-roman-lining, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.ingredient_description {
+    font-family: mrs-eaves-roman-lining, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0.5rem 1.5rem 0.5rem 1rem;
+}
+
+.step {
+    font-family: mrs-eaves, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25rem;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px dotted lightgrey;
+}

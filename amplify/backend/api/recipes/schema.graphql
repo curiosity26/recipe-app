@@ -1,0 +1,82 @@
+enum CookMethod {
+  FRYING
+  BAKING
+  STEAMING
+  ROASTING
+  GRILLING
+  SIMMERING
+  BROILING
+  POACHING
+  BLANCHING
+  BRAISING
+  STEWING
+}
+
+enum Unit {
+  POUND
+  GALLON
+  QUART
+  CUP
+  OUNCE
+  PINT
+  FLUID_CUP
+  FLUID_OUNCE
+  TABLESPOON
+  TEASPOON
+  DASH
+  PINCH
+}
+
+enum CookTimeUnit {
+  MINUTES
+  HOURS
+}
+
+type Recipe
+  @model
+  @searchable
+  @auth(
+    rules: [
+      { allow: groups, groups: ["Admin"], queries: [get, list], mutations: [create, update, delete] },
+      { allow: public, queries: [get, list], mutations: null }
+    ]
+  ) {
+  id: ID!
+  title: String!
+  description: String
+  image: String
+  cookTime: Float
+  cookTimeUnit: CookTimeUnit
+  cookMethods: [CookMethod]
+  prepTime: Float
+  prepTimeUnit: CookTimeUnit
+  recipeCategoryId: ID
+  category: Category @connection(keyField: "recipeCategoryId")
+  ingredients: [Ingredient]!
+  steps: [Step]!
+  keywords: [String]
+  servings: Int
+}
+
+type Category
+  @model
+  @auth(
+    rules: [
+      { allow: groups, groups: ["Admin"], queries: [get, list], mutations: [create, update, delete] },
+      { allow: public, queries: [get, list], mutations: null }
+    ]
+  ) {
+  id: ID!
+  name: String!
+}
+
+type Ingredient {
+  measurement: Float!
+  unit: Unit
+  description: String!
+}
+
+type Step {
+  order: Int!
+  instruction: String!
+}

@@ -1,0 +1,39 @@
+{
+    "prod": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-recipes-prod-131828-authRole",
+            "UnauthRoleArn": "arn:aws:iam::771327034600:role/amplify-recipes-prod-131828-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::771327034600:role/amplify-recipes-prod-131828-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-recipes-prod-131828-deployment",
+            "UnauthRoleName": "amplify-recipes-prod-131828-unauthRole",
+            "StackName": "amplify-recipes-prod-131828",
+            "StackId": "arn:aws:cloudformation:us-east-1:771327034600:stack/amplify-recipes-prod-131828/c56edc60-9a20-11eb-a757-1211ae29fc7a",
+            "AmplifyAppId": "drkwblh44k6sp"
+        },
+        "categories": {
+            "function": {
+                "recipesc33dc2ebPostConfirmation": {
+                    "GROUP": "Admin",
+                    "deploymentBucketName": "amplify-recipes-prod-131828-deployment",
+                    "s3Key": "amplify-builds/recipesc33dc2ebPostConfirmation-536d2f5550652b526344-build.zip"
+                },
+                "recipesa4aab667a4aab667PostConfirmation": {
+                    "GROUP": "Admin",
+                    "deploymentBucketName": "amplify-recipes-prod-131828-deployment",
+                    "s3Key": "amplify-builds/recipesa4aab667a4aab667PostConfirmation-2f6676324f3930543132-build.zip"
+                }
+            },
+            "auth": {
+                "recipesa4aab667a4aab667": {},
+                "userPoolGroups": {}
+            },
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "drkwblh44k6sp",
+                    "type": "manual"
+                }
+            }
+        }
+    }
+}
